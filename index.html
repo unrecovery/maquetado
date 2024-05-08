@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/...">
+    <script src="https://kit.fontawesome.com/d9190cb4f9.js" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const banner = [
+  {
+    imgcar: "img/Imagen1.png"
+  },
+  {
+    imgcar: "img/Imagen2.png"
+  },
+  {
+    imgcar: "img/Imagen3.png"
+  }
+];
+
+const imgEl = document.getElementById("imga");
+let index = 0;
+
+actualiza();
+
+function actualiza() {
+  const { imgcar } = banner[index];
+  imgEl.src = imgcar;
+  index++;
+  if (index === banner.length) {
+    index = 0;
+  }
+  setTimeout(() => {
+    actualiza();
+  }, 4000);
+}
+});
+     
+    </script>
+    <title>MAQUETADO - INICIO :: OLMECARED</title>
+
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="" sizes="" srcset="">
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="">Grupo DG</a>
+            <a href="https://www.bp.com/es_mx/mexico/home.html">BP México</a>
+            <a href="https://gasolineriabp.com.mx/facturagasbpme/?_ga=2.3989360.1932292267.1551110031-1705792997.1539724874">Facturación</a>
+
+            <a href="#">Gasolineras</a>
+            <a href="#">Productos</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section id="img">
+        <div class="contenido-banner">
+           <img id="imga"src="" alt="">
+            <!--h3><span>PAGINA: </span>MUESTRA SITE RESPONSIVE <br>MULTIPLATAFORMA</h3>
+            <a href="#" class="boton-empezar">Empezar</a--->
+        </div>
+    </section>
+    <section id="personas" style="margin-left: 3
+    px;">
+        <div>
+            <h3>PRECIOS ACTUALES</h3>
+            <br/>
+            <table id="price-table">
+                <thead>
+                  <tr>
+                    <th>Estacion</th>
+                    <th style="background-color: green;">BP Regular</th>
+                    <th style="background-color: red;">BP Premium</th>
+                    <th style="background-color: black; color: #FFFFFF;">BP Diesel</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>DEPORTIVA</td>
+                    <td>22.99</td>
+                    <td>24.59</td>
+                    <td>24.69</td>
+                  </tr>
+                  <tr>
+                    <td>TEAPA</td>
+                    <td>22.59</td>
+                    <td>24.19</td>
+                    <td>24.29</td>
+                  </tr>
+                  <tr>
+                    <td>OCUILTZAPOTLAN</td>
+                    <td>22.59</td>
+                    <td>24.99</td>
+                    <td>24.69</td>
+                  </tr>
+                  <tr>
+                    <td>LOS MONOS</td>
+                    <td>23.09</td>
+                    <td>24.59</td>
+                    <td>24.79</td>
+                  </tr>
+                  <tr>
+                    <td>NIÑOS TRAVIESOS</td>
+                    <td>22.99</td>
+                    <td>24.59</td>
+                    <td>24.69</td>
+                  </tr>
+                  <tr>
+                    <td>OLMECA I</td>
+                    <td>23.09</td>
+                    <td>24.59</td>
+                    <td>24.79</td>
+                  </tr>
+                  <tr>
+                    <td>OLMECA II</td>
+                    <td>23.09</td>
+                    <td>24.59</td>
+                    <td>24.79</td>
+                  </tr>
+                  <tr>
+                    <td>PARADOR</td>
+                    <td>23.29</td>
+                    <td>24.39</td>
+                    <td>24.69</td>
+                  </tr>
+                  <tr>
+                    <td>PARAÍSO</td>
+                    <td>22.99</td>
+                    <td>24.59</td>
+                    <td>25.09</td>
+                  </tr>
+                  <tr>
+                    <td>PLAYAS VH</td>
+                    <td>22.59</td>
+                    <td>23.99</td>
+                    <td>24.59</td>
+                  </tr>
+                  <tr>
+                    <td>SAMARÍA</td>
+                    <td>22.89</td>
+                    <td>24.29</td>
+                    <td>24.79</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div>
+            <img src="img/Imagen6.png" alt="" srcset="">
+           
+        </div>
+       
+    </section>
+
+    <!--section id="iconos">
+        <div class="contenido-iconos">
+            <div>
+                <i class="fas fa-shipping-fast fa-3x"></i>
+                <h6>Rapido</h6>
+                <p>Lorem ipsum </p>
+            </div>
+            <div>
+                <i class="fab fa-accessible-icon fa-3x"></i>
+                <h6>Accesible</h6>
+                <p>Lorem ipsum </p>
+            </div>
+            <div>
+                <i class="fas fa-mobile-alt fa-3x"></i>
+                <h6>Resposivo</h6>
+                <p>Lorem ipsum </p>
+            </div>
+        </div>
+        <div class="boton-iconos">
+            <a href="#" class="boton-saber-mas">Saber Mas</a>
+        </div>
+    </section>
+    
+    <section id="contacto" style="color: #FFFFFF;">
+        <h4>Contacta con Nosotros</h4>
+        <form action="#">
+            <div class="datos-form">
+                <div class="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Correo Electronico">
+                </div>
+                <div class="mensaje">
+                    <label for="mensaje">Mensaje</label>
+                   <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="mensaje"></textarea>
+                </div>
+                <div class="boton-formulario">
+                    <a href="#" class="boton-saber-mas">Enviar Mensaje</a>
+                </div>
+            </div>
+        </form>
+    </section-->
+</body>
+</html>
